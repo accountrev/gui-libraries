@@ -2551,7 +2551,7 @@ function Kavo.CreateLib(kavName, themeList)
                 togName_2.TextSize = 14.000
                 togName_2.TextXAlignment = Enum.TextXAlignment.Right
 
-                function GetCurrentKeybind()
+                function this:GetCurrentKeybind()
                     return oldKey
                 end
 
