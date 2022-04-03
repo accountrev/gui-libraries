@@ -2411,10 +2411,6 @@ function Kavo.CreateLib(kavName, themeList)
                     end
                 )
 
-                function KeyFunction:GetKey()
-                    return oldKey
-                end
-
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
                 moreInfo.BackgroundColor3 =
@@ -2559,7 +2555,7 @@ function Kavo.CreateLib(kavName, themeList)
                 togName_2.TextXAlignment = Enum.TextXAlignment.Right
 
                 
-
+                
 
                 coroutine.wrap(
                     function()
@@ -2583,6 +2579,10 @@ function Kavo.CreateLib(kavName, themeList)
                         end
                     end
                 )()
+
+                function KeyFunction:GetKey()
+                    return oldKey
+                end
                 return KeyFunction
             end
 
