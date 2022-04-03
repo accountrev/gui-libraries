@@ -2403,11 +2403,14 @@ function Kavo.CreateLib(kavName, themeList)
                         if not ok then
                             if current.KeyCode.Name == oldKey then
                                 callback()
-                                return oldKey
                             end
                         end
                     end
                 )
+
+                function keybindElement.GetKey()
+                    return oldKey
+                end
 
                 moreInfo.Name = "TipMore"
                 moreInfo.Parent = infoContainer
