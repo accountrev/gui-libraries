@@ -2403,6 +2403,7 @@ function Kavo.CreateLib(kavName, themeList)
                         if not ok then
                             if current.KeyCode.Name == oldKey then
                                 callback()
+                                return oldKey
                             end
                         end
                     end
@@ -2551,9 +2552,7 @@ function Kavo.CreateLib(kavName, themeList)
                 togName_2.TextSize = 14.000
                 togName_2.TextXAlignment = Enum.TextXAlignment.Right
 
-                function this:GetCurrentKeybind()
-                    return oldKey
-                end
+                
 
 
                 coroutine.wrap(
