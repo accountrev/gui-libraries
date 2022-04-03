@@ -2324,6 +2324,9 @@ function Kavo.CreateLib(kavName, themeList)
                 return DropFunction
             end
             function Elements:NewKeybind(keytext, keyinf, first, callback)
+
+                local KeyFunction = {}
+
                 keytext = keytext or "KeybindText"
                 keyinf = keyinf or "KebindInfo"
                 callback = callback or function()
@@ -2408,7 +2411,7 @@ function Kavo.CreateLib(kavName, themeList)
                     end
                 )
 
-                function keybindElement.GetKey()
+                function KeyFunction:GetKey()
                     return oldKey
                 end
 
@@ -2580,6 +2583,7 @@ function Kavo.CreateLib(kavName, themeList)
                         end
                     end
                 )()
+                return KeyFunction
             end
 
             function Elements:NewColorPicker(colText, colInf, defcolor, callback)
