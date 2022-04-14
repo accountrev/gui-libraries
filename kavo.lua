@@ -2161,7 +2161,7 @@ function Kavo.CreateLib(kavName, themeList)
                                     themeList.TextColor.g * 255 - 6,
                                     themeList.TextColor.b * 255 - 6
                                 )
-                                Sample1.ImageColor3 = themeList.SchemeColor
+                                Sample11.ImageColor3 = themeList.SchemeColor
                             end
                         end
                     )()
@@ -2298,7 +2298,7 @@ function Kavo.CreateLib(kavName, themeList)
                                         themeList.TextColor.g * 255 - 6,
                                         themeList.TextColor.b * 255 - 6
                                     )
-                                    Sample1.ImageColor3 = themeList.SchemeColor
+                                    Sample11.ImageColor3 = themeList.SchemeColor
                                 end
                             end
                         )()
