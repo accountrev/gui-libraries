@@ -226,10 +226,8 @@ do
 	function library.new(data)
 		local title = data.title or "Venyx"
 
-		_G.FunkyChartGUI = utility:RandomizedString(12)
-
 		local container = utility:Create("ScreenGui", {
-			Name = _G.FunkyChartGUI,
+			Name = utility:RandomizedString(12),
 			Parent = game.CoreGui
 		}, {
 			utility:Create("ImageLabel", {
