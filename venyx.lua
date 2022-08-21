@@ -225,9 +225,11 @@ do
 
 	function library.new(data)
 		local title = data.title or "Venyx"
+		
+		_G.venyxID = utility:RandomizedString(12)
 
 		local container = utility:Create("ScreenGui", {
-			Name = utility:RandomizedString(12),
+			Name = _G.venyxID,
 			Parent = game.CoreGui
 		}, {
 			utility:Create("ImageLabel", {
