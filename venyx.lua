@@ -1,6 +1,7 @@
 -- init
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
+_G.venyxID = ""
 
 -- services
 local input = game:GetService("UserInputService")
